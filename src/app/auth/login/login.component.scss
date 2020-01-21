@@ -1,0 +1,15 @@
+//input.ng-untouched {padding-left: 15px;}
+//input.ng-touched.ng-invalid {border:solid red 2px; border-radius: 10px; padding-left: 15px;}
+//input.ng-touched.ng-valid {border:solid green 2px; border-radius: 10px; padding-left: 15px;}
+.ng-invalid.ng-touched {
+  border-color: red;
+  outline-color: red;
+}
+.ng-valid.ng-touched {
+  border-color: green;
+  outline-color: green;
+}
+span.form-help-text{
+  color: red;
+  size: 13px;
+}
