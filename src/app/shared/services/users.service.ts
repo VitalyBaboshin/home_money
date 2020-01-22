@@ -24,6 +24,6 @@ export class UsersService extends BaseApi {
   //    .pipe(map(res => res));
   // }
   createNewUser(user: User) {
-    return this.get.post('users', user);
+    return this.post(`users`, user);
   }
 }

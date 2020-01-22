@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
 export class BaseApi {
   private baseUrl = 'http://localhost:3000/';
 
-  constructor(public http: HttpClient);
+  constructor(public http: HttpClient) {}
 
   private getUrl(url: string = ''): string {
     return this.baseUrl + url;
