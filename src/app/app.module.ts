@@ -10,11 +10,12 @@ import {Shared2Module} from './shared/shared2.module';
 import {AuthService} from './shared/services/auth.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AuthGuard} from './shared/services/auth.guard';
-import { NotFoundComponent } from './shared/components/not-found/not-found.component';
+import {NotFoundComponent} from './shared/components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
