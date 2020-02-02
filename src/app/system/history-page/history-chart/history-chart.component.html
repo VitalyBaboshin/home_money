@@ -1,0 +1,35 @@
+<section class="section">
+  <div class="row">
+    <div class="col-xs-12 text-center chart-center">
+      <div *ngIf="dataIncome !== null">
+        <label class="text-center">Доход</label>
+        <ngx-charts-pie-chart
+          [view]="[500, 400]"
+          [results]="dataIncome"
+          [legend]="false"
+          [labels]="true"
+          [doughnut]="true"
+        >
+        </ngx-charts-pie-chart>
+      </div>
+      <div *ngIf="data !== null">
+        <label class="text-center">Расход</label>
+        <ngx-charts-pie-chart
+          [view]="[500, 400]"
+          [results]="data"
+          [legend]="false"
+          [labels]="true"
+          [doughnut]="true"
+        >
+        </ngx-charts-pie-chart>
+      </div>
+      <label
+        class="text-center"
+        *ngIf="data === null && dataIncome === null"
+      >
+        Результат выбора пустой, установите другой фильтр или сбросьте его
+      </label>
+
+    </div>
+  </div>
+</section>
