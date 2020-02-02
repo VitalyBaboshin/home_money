@@ -8,7 +8,7 @@
     }
   ],
   "bill": {
-    "value": 94600,
+    "value": 125901,
     "currency": "RUB"
   },
   "categories": [
@@ -18,14 +18,14 @@
       "id": 1
     },
     {
-      "name": "Еда",
-      "capacity": 10000,
+      "name": "машниа",
+      "capacity": 6000,
       "id": 2
     },
     {
-      "id": 3,
-      "name": "Машина",
-      "capacity": 7000
+      "name": "сад",
+      "capacity": 3000,
+      "id": 3
     }
   ],
   "events": [
@@ -35,7 +35,7 @@
       "amount": 1250,
       "category": 2,
       "date": "25.12.2019 20:31:12",
-      "description": "Подарили еду в гостях"
+      "description": "eat"
     },
     {
       "id": 2,
@@ -43,15 +43,95 @@
       "amount": 1300,
       "category": 1,
       "date": "26.12.2019 12:12:03",
-      "description": "Купил посудомоечную машину"
+      "description": "by wash-car"
+    },
+    {
+      "id": 3,
+      "type": "outcome",
+      "amount": 200,
+      "category": 1,
+      "date": "26.12.2019 12:12:03",
+      "description": "test3"
+    },
+    {
+      "type": "outcome",
+      "amount": 900,
+      "category": 2,
+      "date": "02.02.2020 22:16:18",
+      "description": "test4",
+      "id": 4
+    },
+    {
+      "type": "outcome",
+      "amount": 3500,
+      "category": 2,
+      "date": "02.02.2020 22:37:49",
+      "description": "test5",
+      "id": 5
+    },
+    {
+      "type": "outcome",
+      "amount": 1500,
+      "category": 3,
+      "date": "28.01.2020 14:00:59",
+      "description": "ntcn2",
+      "id": 6
+    },
+    {
+      "type": "outcome",
+      "amount": 1600,
+      "category": 3,
+      "date": "28.01.2020 14:01:38",
+      "description": "test",
+      "id": 7
     },
     {
       "type": "income",
-      "amount": 1480,
-      "category": 2,
-      "date": "27.12.2019 15:48:15",
-      "id": 3,
-      "description": "Поход в окей с баллами. Бесплатная еда"
+      "amount": 1,
+      "category": 3,
+      "date": "28.01.2020 14:02:13",
+      "description": "1400",
+      "id": 8
+    },
+    {
+      "type": "income",
+      "amount": 1000,
+      "category": 3,
+      "date": "28.01.2020 14:02:36",
+      "description": "111",
+      "id": 9
+    },
+    {
+      "type": "income",
+      "amount": 10000,
+      "category": 3,
+      "date": "28.01.2020 14:02:56",
+      "description": "test3",
+      "id": 10
+    },
+    {
+      "type": "outcome",
+      "amount": 100,
+      "category": 1,
+      "date": "31.01.2020 00:17:48",
+      "description": "test6",
+      "id": 11
+    },
+    {
+      "type": "income",
+      "amount": 1500,
+      "category": 1,
+      "date": "31.01.2020 10:53:23",
+      "description": "test7",
+      "id": 12
+    },
+    {
+      "type": "income",
+      "amount": 1000,
+      "category": 1,
+      "date": "01.02.2020 22:03:16",
+      "description": "test3",
+      "id": 13
     }
   ]
 }
