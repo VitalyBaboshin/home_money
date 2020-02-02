@@ -8,7 +8,9 @@ import {AppRoutingModule} from './app-routing.module';
 import {UsersService} from './shared/services/users.service';
 import {Shared2Module} from './shared/shared2.module';
 import {AuthService} from './shared/services/auth.service';
-import {SystemModule} from './system/system.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {AuthGuard} from './shared/services/auth.guard';
+import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,9 @@ import {SystemModule} from './system/system.module';
     AuthModule,
     AppRoutingModule,
     Shared2Module,
-    SystemModule
+    BrowserAnimationsModule
   ],
-  providers: [UsersService, AuthService],
+  providers: [UsersService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
