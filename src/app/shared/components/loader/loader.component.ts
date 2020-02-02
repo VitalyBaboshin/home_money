@@ -5,3 +5,5 @@ import {Component} from '@angular/core';
   template: `<div class="loader-animator"></div>`,
   styleUrls: ['./loader.component.scss']
 })
+export class LoaderComponent {
+}
