@@ -1,7 +1,10 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {BillService} from '../shared/services/bill.service';
 import {combineLatest, Subscription} from 'rxjs';
+import {Title} from '@angular/platform-browser';
+
+import {BillService} from '../shared/services/bill.service';
 import {Bill} from '../shared/models/bill.model';
+
 
 @Component({
   selector: 'wfm-bill-page',
@@ -16,7 +19,10 @@ export class BillPageComponent implements OnInit, OnDestroy {
   bill: Bill;
   isLoaded = false;
 
-  constructor(public billService: BillService) { }
+  constructor(public billService: BillService,
+              private title: Title) {
+    title.setTitle('Страница счета');
+  }
   ngOnInit() {
         this.sub1 = combineLatest([
           this.billService.getBill(),

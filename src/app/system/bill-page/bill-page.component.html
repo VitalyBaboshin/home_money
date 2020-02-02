@@ -9,7 +9,9 @@
   </div>
 </div>
 <section class="section">
-  <div class="row text-center" *ngIf="!isLoaded">Loading...</div>
+  <div class="row text-center" *ngIf="!isLoaded">
+    <wfm-loader></wfm-loader>
+  </div>
   <div class="row" *ngIf="isLoaded">
     <wfm-bill-card [bill]="bill" [currency]="currency"></wfm-bill-card>
     <wfm-currency-card [currency]="currency"></wfm-currency-card>
